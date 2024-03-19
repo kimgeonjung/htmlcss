@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05form</title>
+  </head>
+  <body>
+    <input name="data" required>
+    <br>
+
+    <div>이메일 입력</div>
+    <input placeholder="example@example.com">
+    <br>
+
+    <div>색 입력</div>
+    <input type="color">
+    <br>
+
+    <div>날짜 입력</div>
+    <input type="datetime-local">
+    <br>
+
+    <div>비밀번호</div>
+    <input type="password">
+    <br>
+
+    <div>파일 선택</div>
+    <input type="file" multiple>
+    <br>
+
+    <div>이메일 입력</div>
+    <input type="email">
+    <br>
+
+    <div>성별 입력</div>
+    <input type="radio" name="gender" checked>남성
+    <input type="radio" name="gender">여성
+    <br>
+
+    <input type="checkbox">약관에 동의합니다.
+    <br>
+
+    <div>기본 값을 넣을 수 있음. 날짜도 가능</div>
+    <input value="기본값">
+    <input type="date" value="2024-01-01">
+    <br>
+
+    <div>비활성화</div>
+    <input disabled>
+    <input disabled value="값 입력 X">
+    <input type="date" disabled>
+    <input type="color" disabled>
+    <input type="file" disabled>
+    <br>
+
+    <div>읽어봐</div>
+    <input readonly value="수정 불가능">
+    <br>
+
+    <div>여러 줄 입력</div>
+    <textarea rows="4"></textarea>
+    <br>
+
+    <div>이름 나이</div>
+    <input id="name">
+    <label for="name">이름</label><br>
+    <input id="age" type="number" min="0">
+    <label for="age">나이</label>
+    <br>
+
+    <div>국가선택</div>
+    <select multiple>
+        <option>한국</option>
+        <option>중국</option>
+        <option>일본</option>
+        <option>미국</option>
+        <option>영국</option>
+    </select>
+
+    <div>국가선택</div>
+    <input list="dataList">
+    <datalist id="dataList">
+        <option value="한국"></option>
+        <option value="중국"></option>
+        <option value="일본"></option>
+        <option value="미국"></option>
+        <option value="영국"></option>
+    </datalist>
+
+    <form>
+        <label for="name">이름</label> <input id="name"><br>
+        <label for="age">나이</label> <input id="age" type="number" min="0"><br>
+        <label for="email">이메일</label> <input id="email" type="email"><br>
+        <label for="birth">생년월일</label> <input id="birth" type="date"><br>
+        <label for="contry">국가</label>
+        <select id="contry">
+            <option>한국</option>
+            <option>미국</option>
+            <option>중국</option>
+            <option>일본</option>
+            <option>영국</option>
+        </select>
+        <br><br>
+        <button type="reset">초기화</button>
+        <button type="submit">제출</button>
+    </form>
+  </body>
+</html>
